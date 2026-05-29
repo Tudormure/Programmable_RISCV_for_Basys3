@@ -1,0 +1,24 @@
+# --- Ignorari pentru Vivado ---
+*.jou
+*.log
+*.strl
+*.pb
+*.wdb
+*.vcd
+*.dir/
+.Xil/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+
+# --- Ignorari pentru Python ---
+__pycache__/
+*.pyc
+venv/
+env/
+build/
+dist/
+*.spec
+rezultate_registri.txt
