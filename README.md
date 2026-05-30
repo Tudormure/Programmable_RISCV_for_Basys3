@@ -12,16 +12,27 @@ REQUIREMENTS:
 ***Instructiuni:***
 
 | **ADD** | `add rd, rs1, rs2` | Adunare pe 32 de biți: `rd = rs1 + rs2` | `add x3, x1, x2` |
+
 | **SUB** | `sub rd, rs1, rs2` | Scădere în complement față de 2: `rd = rs1 - rs2` | `sub x3, x1, x2` |
+
 | **AND** | `and rd, rs1, rs2` | ȘI logic (Bitwise AND): `rd = rs1 & rs2` | `and x3, x1, x2` |
+
 | **OR** | `or rd, rs1, rs2` | SAU logic (Bitwise OR): `rd = rs1 \| rs2` | `or x3, x1, x2` |
+
 | **SLL** | `sll rd, rs1, rs2` | Deplasare logică la stânga (Shift Left) cu `rs2[4:0]` biți | `sll x3, x1, x2` |
+
 | **SRL** | `srl rd, rs1, rs2` | Deplasare logică la dreapta (Shift Right) cu `rs2[4:0]` biți | `srl x3, x1, x2` |
+
 | **SLT** | `slt rd, rs1, rs2` | Set Less Than (Comparație cu semn). Dacă `rs1 < rs2`, `rd = 1`, altfel `0` | `slt x3, x1, x2` |
+
 | **ADDI** | `addi rd, rs1, imm` | Adună o constantă: `rd = rs1 + imm` | `addi x1, x0, 15` |
+
 | **LW** | `lw rd, imm(rs1)` | Load Word. Citește 32 biți din RAM la adresa `rs1 + imm` | `lw x5, 4(x1)` |
+
 | **SW** | `sw rs2, imm(rs1)` | Store Word. Scrie valoarea `rs2` la adresa `rs1 + imm` | `sw x4, 0(x1)` |
+
 | **BEQ** | `beq rs1, rs2, imm` | Branch if Equal. Dacă `rs1 == rs2`, sare la `PC = PC + imm` | `beq x1, x2, 12` |
+
 
 
 <img width="518" height="283" alt="image" src="https://github.com/user-attachments/assets/ea01075c-40cb-403d-a676-585637e9bd39" />
